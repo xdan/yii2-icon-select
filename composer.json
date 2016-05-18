@@ -1,0 +1,30 @@
+{
+    "name": "dvixi/yii2-icon-select",
+    "description": "yii2 widget for image-icons choosing, based on iconselect.js",
+    "keywords": [
+        "yii",
+        "widget",
+        "yii2",
+        "yii 2",
+        "icon select",
+        "icon picker",
+        "icon image picker"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "dvixi",
+            "email": "athl64@bigmir.net"
+        }
+    ],
+    "version": "1.0.0",
+    "require": {
+        "php": ">=5.4.0",
+        "yiisoft/yii2": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "dvixi\\": "src/"
+        }
+    }
+}
