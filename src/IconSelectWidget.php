@@ -122,11 +122,10 @@ class IconSelectWidget extends \yii\base\Widget
 
         if ($this->model[$this->attribute]) {
             $index = $this->model[$this->attribute];
-            if (is_numeric($index)) {
-	            $script .=  "iconSelect.setSelectedIndex($index);";
-            } else {
-	            $script .=  "iconSelect.setSelectedIndex('$index');";
+            if (!is_numeric($index)) {
+	            $index = array_search($index, array_values($this->items));
             }
+	        $script .=  "iconSelect.setSelectedIndex($index);";
         }
 
         $script .=      "var selectedItem = document.getElementById('$this->inputId');";
