@@ -11,7 +11,7 @@ namespace xdan;
 
 class IconSelectWidgetAsset extends \yii\web\AssetBundle
 {
-    public $sourcePath = '@vendor/dvixi/yii2-icon-select/src/assets';
+    public $sourcePath = '@vendor/xdan/yii2-icon-select/src/assets';
     public $js = [
         'js/lib/control/iconselect.js',
         'js/lib/iscroll.js',

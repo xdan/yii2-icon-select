@@ -9,7 +9,7 @@
 namespace xdan;
 
 
-use dvixi\IconSelectWidgetAsset;
+use xdan\IconSelectWidgetAsset;
 use yii\helpers\ArrayHelper;
 use yii\helpers\Html;
 use yii\helpers\Json;

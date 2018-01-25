@@ -5,7 +5,7 @@ Yii2 image\icon picker, based on [iconselect.js](https://github.com/bug7a/iconse
 
 ##Installation
 
-`composer require dvixi/yii2-icon-select`
+`composer require xdan/yii2-icon-select`
 
 ##Usage
 
@@ -15,7 +15,7 @@ $items = [
     "icon2.png",
 ];
 
-echo \dvixi\IconSelectWidget::widget([
+echo \xdan\IconSelectWidget::widget([
     'model' => $model,
     'attribute' => 'attributeName',
     'items' => $items,
@@ -30,7 +30,7 @@ echo \dvixi\IconSelectWidget::widget([
 OR
 
 ```
-echo $form->field($model, 'attribute')->widget(\dvixi\IconSelectWidget::className(), [
+echo $form->field($model, 'attribute')->widget(\xdan\IconSelectWidget::className(), [
     'items' => $items,
     'pluginOptions' => [...],
 ]);
