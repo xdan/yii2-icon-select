@@ -6,7 +6,7 @@
  * Time: 1:50 PM
  */
 
-namespace dvixi;
+namespace xdan;
 
 
 class IconSelectWidgetAsset extends \yii\web\AssetBundle

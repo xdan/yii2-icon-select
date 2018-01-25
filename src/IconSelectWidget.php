@@ -6,7 +6,7 @@
  * Time: 1:34 PM
  */
 
-namespace dvixi;
+namespace xdan;
 
 
 use dvixi\IconSelectWidgetAsset;
@@ -119,10 +119,16 @@ class IconSelectWidget extends \yii\base\Widget
         $script .=      "iconSelect = new IconSelect('$this->pluginId', $pluginOptions);";
         $script .=      "var icons = $itemsEncoded;";
         $script .=      "iconSelect.refresh(icons);";
+
         if ($this->model[$this->attribute]) {
             $index = $this->model[$this->attribute];
-            $script .=  "iconSelect.setSelectedIndex($index);";
+            if (is_numeric($index)) {
+	            $script .=  "iconSelect.setSelectedIndex($index);";
+            } else {
+	            $script .=  "iconSelect.setSelectedIndex('$index');";
+            }
         }
+
         $script .=      "var selectedItem = document.getElementById('$this->inputId');";
         $script .=      "document.getElementById('$this->pluginId').addEventListener('changed', function(e) {";
         $script .=          "selectedItem.value = iconSelect.getSelectedValue();";

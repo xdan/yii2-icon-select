@@ -1,0 +1,21 @@
+{
+  "name": "yii2-icon-picker",
+  "version": "1.0.1",
+  "description": "Yii2-icon-select\r ================",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "newversion": "npm version patch --no-git-tag-version && npm run github",
+    "github": "git add --all  && git commit -m \"New version %npm_package_version%. Read more http://xdsoft.net/jodit/doc/index.html#%npm_package_version% \" && git tag %npm_package_version% && git push --tags origin HEAD:master"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xdan/yii2-icon-select.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/xdan/yii2-icon-select/issues"
+  },
+  "homepage": "https://github.com/xdan/yii2-icon-select#readme"
+}
